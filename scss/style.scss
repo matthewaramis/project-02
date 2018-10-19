@@ -3,6 +3,7 @@
 @import "partials/mixins";
 @import "partials/base";
 @import "partials/layout";
+@import "partials/selectric";
 
 /* ELEMENTS */
 
@@ -70,11 +71,13 @@ header {
   content: "\f078";
   font: normal normal normal 1.063rem/1 FontAwesome;
   color: #1098c8;
-  right: 32%;
+  height: 2rem;
   padding: 0.8rem 0 0 0.5rem;
   border-left: 1px solid #0ebeff;
   pointer-events: none;
-  max-width: 200px;
+  position: absolute;
+  top: 21rem;
+  right: 6.75rem;
 }
 
 .topicselector select {
