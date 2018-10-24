@@ -7,7 +7,6 @@
 }
 
 html {
-  color: #646464;
   font-family: "Open Sans Light";
   font-size: 18px;
 }
@@ -30,6 +29,10 @@ img {
 
 .wrapper {
   width: 480px;
+
+  //   @include tablet-query {
+  //     width: 100%;
+  //   }
 }
 
 /* CONTENT AREA */
@@ -37,6 +40,14 @@ img {
 header {
   margin-bottom: 0.5rem;
 }
+
+// .logoAndSelector {
+//   @include tablet-query {
+//     display: flex;
+//     flex-direction: row;
+//     margin: 1rem 0;
+//   }
+// }
 
 .content {
   color: #646464;
@@ -63,19 +74,6 @@ header {
   }
 }
 
-.topicselector:after {
-  content: "\f078";
-  font: normal normal normal 1.063rem/1 FontAwesome;
-  color: #1098c8;
-  height: 2rem;
-  padding: 0.8rem 0 0 0.5rem;
-  border-left: 1px solid #0ebeff;
-  pointer-events: none;
-  position: absolute;
-  top: 21rem;
-  right: 6.75rem;
-}
-
 label {
   font-weight: 500;
   margin-bottom: 1rem;
@@ -88,15 +86,19 @@ label {
     background: no-repeat center/auto 100%;
     padding: 20rem 0 0 0;
 
+    // @include tablet-query {
+    //   width: 33.33%;
+    // }
+
     a {
       text-decoration: none;
       color: #ffffff;
-      background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5));
+      background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.9));
       display: flex;
       align-items: flex-end;
       padding: 1rem 0;
       opacity: 0;
-      transition: all 1s ease-in;
+      transition: all 0.5s ease-in;
 
       &:visited {
         color: #ffffff;
@@ -113,7 +115,7 @@ label {
   display: flex;
   justify-content: center;
   height: 2rem;
-  width: 100%;
+  width: auto;
 }
 
 footer {
@@ -126,4 +128,8 @@ footer {
 .credit {
   margin-top: 0px;
   text-align: center;
+}
+
+.instanewsCopy {
+  text-transform: uppercase;
 }
