@@ -5,10 +5,11 @@ $(document).ready(function() {
     $(".loadingAnimation").append(
       `<img src="./assets/images/ajax-loader.gif" alt="loading gif" />`
     );
-    // let url = `https://api.nytimes.com/svc/topstories/v2/${"topic-select"}.json`;
+  });
 
+  function() {
     $.ajax({
-      method: "get",
+      method: "GET",
       url: `https://api.nytimes.com/svc/topstories/v2/${topicSelect}.json?api-key=17652fbd85734f4f98836d7c455a7164`
     })
 
@@ -40,5 +41,6 @@ $(document).ready(function() {
           );
         }); // end of .each
       }); // end of .done
-  });
+  };
 });
+
