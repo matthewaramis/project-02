@@ -1,6 +1,7 @@
 $(document).ready(function() {
   // js code
   $("#topicselector").on("change", function() {
+    // $('.nytlogo').addClass('change-nytlogo'); <-This will add a class to your logo that you can target so that the format changes when you select a category.  A few more will need to be made to finish your css.
     const topicSelect = $("#topicselector option:selected").val();
     $(".loadingAnimation").append(
       `<img src="./assets/images/ajax-loader.gif" alt="loading gif" />`
